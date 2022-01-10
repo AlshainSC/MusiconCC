@@ -33,7 +33,7 @@ const context = {
 
   //This block is correct, as per CC, however does not seem to run.
   const templateElement = document.getElementById("templateHB");
-  templateElement.innerHTML = templateSource;
+  const templateSource = templateElement.innerHTML;
   const template = Handlebars.compile(templateSource);
   const compiledHtml = template(context);
   document.getElementById("information").innerHTML = compiledHtml;
