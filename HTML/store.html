@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Musicon</title>
     <link rel="stylesheet" href="/CSS/style.css">
-    <script src="/JS/handlebars.min.js"></script>
+    <!--Switched to CDN from base link-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
   </head>
 
   <body>
@@ -30,8 +31,9 @@
       </section>
     </header>
 
+    <!--With HandleBars correctly implemented, these could be deleted(?)-->
     <article id="showcase">
-      <section class="container">
+      <section id= "information" class="container">
         <article class="instrument">
           <img class="image" src="https://content.codecademy.com/courses/learn-handlebars/musicon/electronic-keyboard.png" alt="Electronic Keyboard">
           <section class="details">
